@@ -1,0 +1,36 @@
+DataBase Format For Online Assignment Submission
+
+Teachers-
+	
+Teacher Id
+Teacher Name
+password
+
+
+Subjects-
+
+Subject Name
+Subject Id
+
+
+Students-
+
+Student id
+Student password
+
+
+Relationship Tables
+
+Subject-Teacher-Location
+Teacher Id
+Subject Id
+
+
+Student Subject-Location
+
+Subject Id
+student Id(subString)first 5 characters.
+
+How to check How Many Students have uploaded
+To create a folder -  AssignmentIdSubjectId
+Inside The folder - sid.fileExtension

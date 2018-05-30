@@ -1,0 +1,33 @@
+This Folder sbmapp is on server in html folder and contains 6 PHP files.
+exact path is /var/www/html/sbmapp
+
+The following are the six php files.
+
+1 . checkLoginApp.php ->  Is called for login in before uploading the photos to ther server.
+
+2. ConfigSbmPunjab.php,configSbmPunjab1.php -> Is where connection is made. These files are included in other files.
+
+3. UpdatePassword.php  -> Used when the user wants to update the password.
+
+4. UploadToServer.php -> php file which was called in older version of the applications( No need in the newer veresion)
+
+5. UploadToServerNew.php -> This is the most important file.
+			    
+The image gets uploaded from this file and stored in database. 
+	- The file gets compressed if big in size initially
+  	
+	- the uploaded file name is fetched and broke down and saved into variables
+
+      	- Then according to the value of these variables,The query is excuted which updates the database
+
+	- If No Match is found, then "noMatch" string is returned which is read by the application, and gives the message to the user.
+
+
+These files are very simple in php and can be easily manipulated by any one with a bit knowledge.
+
+if keyword[1] is "mo" means if the second value in photo name is mo, then it will be  a trigerring image no beneficiary data.
+
+
+(Please change the file carefully and check on localhost intially and then replace the files to the exact path in the server)
+
+
